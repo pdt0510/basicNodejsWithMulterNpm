@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uploading file</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="<%= homeUrl%>">Home</a>
+      <a class="active" href="<%= uploadFileUrl%>">Upload</a>
+    </div>
+
+    <div class="upload-file-container">
+      <!-- loading a single file,  -->
+      <label>Upload single file</label>
+      <form
+        method="POST"
+        action="<%= handleUploadFileUrl%>"
+        enctype="multipart/form-data"
+      >
+        <div>
+          <label>Avatar:</label>
+          <input type="file" name="<%= singleFileName%>" />
+        </div>
+        <div>
+          <button class="btn-save" type="submit">Save files</button>
+        </div>
+      </form>
+      <br />
+
+      <!-- loading multiple files -->
+      <form
+        method="POST"
+        action="<%= handleMutilUploadFileUrl%>"
+        enctype="multipart/form-data"
+      >
+        <div>
+          <label>Upload multiple files</label>
+          <input type="file" name="<%= multipleFileName%>" multiple />
+        </div>
+        <div>
+          <input
+            type="submit"
+            name="btn_upload_multiple_images"
+            value="Upload"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

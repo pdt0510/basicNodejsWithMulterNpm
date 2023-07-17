@@ -1,0 +1,60 @@
+<!-- src11 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uploading file</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <!-- 14ms10ss -->
+      <a href="/">Home</a>
+      <a class="active" href="/upload">Upload</a>
+    </div>
+
+    <div class="upload-file-container">
+      <!-- loading a file, 18ms44ss, 25ms30ss -->
+      <label>Upload single file</label>
+      <form
+        method="POST"
+        action="/upload-profile-pic"
+        enctype="multipart/form-data"
+      >
+        <div>
+          <label>Avatar:</label>
+          <!-- 19ms44ss, 24ms54ss -->
+          <input type="file" name="profile_pic" />
+        </div>
+        <div>
+          <button class="btn-save" type="submit">Save files</button>
+        </div>
+      </form>
+      <br />
+
+      <!-- uploading multiple files, 23ms08ss, 25ms30ss,  -->
+      <form
+        method="POST"
+        action="/upload-multiple-images"
+        enctype="multipart/form-data"
+      >
+        <div>
+          <!-- 27ms28ss -->
+          <label>Upload multiple files</label>
+
+          <!-- 24ms54ss, 27ms28ss -->
+          <input type="file" name="multiple_images" multiple />
+        </div>
+        <div>
+          <input
+            type="submit"
+            name="btn_upload_multiple_images"
+            value="Upload"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

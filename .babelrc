@@ -1,0 +1,6 @@
+// src2, 21ms26ss
+{
+	"presets": [
+		"@babel/preset-env"
+	]
+}

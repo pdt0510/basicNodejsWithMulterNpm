@@ -1,0 +1,23 @@
+body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
+.topnav{overflow:hidden;background-color:#333}
+.topnav a{float:left;color:#f2f2f2;text-align:center;padding:14px 16px;text-decoration:none;font-size:17px}
+.topnav a:hover{background-color:#ddd;color:#000}
+.topnav a.active{background-color:#04aa6d;color:#fff}
+#customers{font-family:Arial,Helvetica,sans-serif;border-collapse:collapse;width:100%}
+#customers td,#customers th{border:1px solid #ddd;padding:8px}
+#customers tr:nth-child(even){background-color:#f2f2f2}
+#customers tr:hover{background-color:#ddd}
+#customers th{padding-top:12px;padding-bottom:12px;text-align:left;background-color:#04aa6d;color:#fff}
+.btn-group{display:flex}
+.nav-btn{margin:0 4px;cursor:pointer}
+.nav-btn a{color:#000;text-decoration:none}
+.user-form-container{width:600px;margin:24px auto;text-align:center}
+.user-heading{font-size:20px;font-weight:600;margin:12px 0 12px 60px}
+.label-user{display:inline-block;min-width:75px;margin:8px 0;text-align:end}
+.user-input{width:80%;height:24px;font-size:16px;margin-left:8px}
+.btn-submit{margin:12px 0 12px 60px;font-size:20px;cursor:pointer}
+.btn-submit a{text-decoration:none;color:#000}
+.btn-submit-group{display:flex;justify-content:center}
+.upload-file-container{padding:15px}
+.upload-file-container label{display:block}
+.btn-save{margin-top:15px;cursor:pointer}

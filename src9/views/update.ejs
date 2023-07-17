@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update user</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!-- 28ms40ss -->
+    <div class="user-form-container">
+      <form action="<%= updateUserUrl%>/<%= editingUser.id%>" method="post">
+        <div class="user-heading">Updating userId: <%= editingUser.id%></div>
+        <div class="group-control">
+          <!-- v14xx2 -->
+          <input hidden name="id" value="<%= editingUser.id%>" />
+
+          <label class="label-user" for="fn_for">First name</label>
+          <input
+            class="user-input"
+            type="text"
+            id="fn_for"
+            name="firstName"
+            value="<%= editingUser.firstName%>"
+          />
+        </div>
+        <div class="group-control">
+          <label class="label-user" for="ln_for">Last name</label>
+          <input
+            class="user-input"
+            type="text"
+            id="ln_for"
+            name="lastName"
+            value="<%= editingUser.lastName%>"
+          />
+        </div>
+        <div class="group-control">
+          <label class="label-user" for="e_for">Email</label>
+          <input
+            class="user-input"
+            type="email"
+            id="e_for"
+            name="email"
+            value="<%= editingUser.email%>"
+          />
+        </div>
+        <div class="group-control">
+          <label class="label-user" for="addr_for">Address</label>
+          <input
+            class="user-input"
+            type="text"
+            id="addr_for"
+            name="address"
+            value="<%= editingUser.address%>"
+          />
+        </div>
+        <div class="btn-submit-group">
+          <button class="btn-submit btn-success">
+            <a href="<%= homeUrl%>">Cancel</a>
+          </button>
+          <button type="submit" class="btn-submit btn-success">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
